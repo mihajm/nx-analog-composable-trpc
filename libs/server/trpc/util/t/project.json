@@ -1,0 +1,31 @@
+{
+  "name": "server-trpc-util-t",
+  "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/server/trpc/util/t/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/server/trpc/util/t"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["coverage/libs/server/trpc/util/t"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../../../../coverage/libs/server/trpc/util/t"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/server/trpc/util/t/**/*.ts"]
+      }
+    }
+  },
+  "tags": ["type:util", "scope:server"]
+}

@@ -14,7 +14,18 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@test/client/note/feature/note-provider": [
+        "libs/client/note/feature/note-provider/src/index.ts"
+      ],
+      "@test/server/trpc/model/client-proxy": [
+        "libs/server/trpc/model/client-proxy/src/index.ts"
+      ],
+      "@test/server/trpc/util/t": ["libs/server/trpc/util/t/src/index.ts"],
+      "@test/shared/note/data-access/note-router": [
+        "libs/shared/note/data-access/note-router/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
